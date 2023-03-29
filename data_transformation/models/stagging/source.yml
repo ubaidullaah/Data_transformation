@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: Sales
+    schema: Sales
+    tables:
+      - name: Retailers
+      - name: Orders
+      - name: Order_methods
+      - name: Products
+      - name: daily_sales
