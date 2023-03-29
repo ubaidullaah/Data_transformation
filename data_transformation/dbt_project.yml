@@ -34,5 +34,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   data_transformation:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    stagging:
+      +enabled: True
       +materialized: view
+      +schema: GO_Sales    
+    
+    warehouse:
+      +enabled: True
+      +materialized: table
+      +schema: dim_Sales
